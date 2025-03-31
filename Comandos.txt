@@ -1,0 +1,50 @@
+Configuracion Git:
+
+git config --global user.email "gonzalezaguirresergio@gmail.com"
+git config --global user.name "Sergio Gonzalez Aguirre"
+
+
+
+
+Proceso de subir archivos a git:
+
+git init                                                                    -->Inicializa Git en la carpeta
+git add .                                                                   -->Añade todos los archivos al área de preparación
+git commit -m "Primer commit"                                               -->Crea el primer commit
+git branch -M main                                                          -->Cambia la rama principal a 'main'
+git remote add origin git@github.com:Sergiogonzalez1775/curso-git.git   
+git remote add origin https://github.com/Sergiogonzalez1775/curso-git.git   -->Conéctalo a GitHub
+git push -u origin main                                                     -->Sube los archivos
+
+
+
+
+Comandos:
+
+git status                                                                  -->Comando para ver mnodificaciones hechas
+git add XXXXX                                                               -->Añade archivo especifico al área de preparación
+git add .                                                                   -->Añade todos los archivos al área de preparación
+git commit -m "XXXXXX"                                                      -->Crea el comit con la confirmacion del cambio
+git log                                                                     -->Ver el historial de commits realizados
+git checkout XXXXXX                                                         -->Revisa estado de un commit anterior
+git reflog                                                                  -->Este comando mostrará un historial de los movimientos del  
+                                                                               HEAD, incluyendo checkouts y commits recientes.
+git reset XXXXXX                                                            -->Vuelve al estado del commit que le indiques borrando los 
+                                                                               posteriores
+git reset --hard XXXXXX                                                     -->Vuelve al estado del commit que le indiques borrando los 
+                                                                               posteriores y volviendo el fichero al estado indicado
+git restore                                                                 -->Recuperar archivos borrados con  el contenido del ultimo comit
+
+
+
+SSH
+git clone git@github.com:Sergiogonzalez1775/curso-git.git 
+
+https
+git clone https://github.com/Sergiogonzalez1775/curso-git.git
+
+
+
+Generar SSH key:
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
